@@ -3,6 +3,10 @@ $(function() {
 
 	var individual_price_table = $('.order').find('.first');
 		var company_price_table = $('.order').find('.second');
+
+		$('.order').find('.first').addClass('active');
+		$('.order').find('.starter').addClass('active');
+
 	$('.bottom-wrapp').find('.first').on('click', function(){
 			$(this).addClass('active');
 			$(this).closest('.bottom-wrapp').removeClass('active');
